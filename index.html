@@ -1,25 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Computation Form</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question App</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
 </head>
 <body>
-    <h1>Computation Form</h1>
-    <form id="computationForm">
-        <label for="num1">Number 1:</label>
-        <input type="number" id="num1" name="num1" required><br><br>
-        
-        <label for="num2">Number 2:</label>
-        <input type="number" id="num2" name="num2" required><br><br>
-        
-        <button type="submit">Calculate</button>
-    </form>
-    
-    <h2>Result:</h2>
-    <div id="result"></div>
-    
-    <script src="script.js"></script>
+    <h1>Question App</h1>
+
+    <!-- Display questions -->
+    <div id="questions">
+        <h2>Questions</h2>
+        <ul id="questionList"></ul>
+    </div>
+
+    <!-- Display the pie chart -->
+    <div id="chartContainer">
+        <h2>Answer Distribution</h2>
+        <canvas id="pieChart"></canvas>
+    </div>
 </body>
 </html>
-
