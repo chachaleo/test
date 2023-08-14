@@ -10,7 +10,7 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-$query = "SELECT question_text FROM questions_1";
+$query = "SELECT 'Col 1' as question_text FROM questions_1";
 $result = mysqli_query($conn, $query);
 
 $questions = [];

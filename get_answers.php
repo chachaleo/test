@@ -10,7 +10,7 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-$query = "SELECT correct_answer, COUNT(*) as count FROM questions_1 GROUP BY correct_answer";
+$query = "SELECT 'Col 2' as correct_answer, COUNT(*) as count FROM questions_1 GROUP BY 'Col 2'";
 $result = mysqli_query($conn, $query);
 
 $answers = [];
