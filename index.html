@@ -3,15 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Database Access Example</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Fetch Answer</title>
 </head>
 <body>
-    <div class="container">
-        <h1>Database Access Example</h1>
-        <button id="goButton">Go</button>
-        <div id="answerContainer"></div>
-    </div>
-    <script src="script.js"></script>
+    <h1>Fetch Answer Example</h1>
+    <button id="fetchAnswerButton">Fetch First Answer</button>
+    <div id="answerDisplay"></div>
+    <script>
+        const fetchAnswerButton = document.getElementById('fetchAnswerButton');
+        const answerDisplay = document.getElementById('answerDisplay');
+
+        fetchAnswerButton.addEventListener('click', () => {
+            fetch('fetch_answer.php')
+                .then(response => response.text())
+                .then(answer => {
+                    answerDisplay.textContent = `First answer: ${answer}`;
+                });
+        });
+    </script>
 </body>
 </html>
