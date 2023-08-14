@@ -15,6 +15,7 @@ foreach ($rows as $row) {
 // Get the first answer
 $firstAnswer = isset($csvData[0][1]) ? $csvData[0][1] : "Answer not available";
 
+// Output the answer
 echo $firstAnswer;
 ?>
 
