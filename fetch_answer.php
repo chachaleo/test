@@ -1,6 +1,6 @@
 <?php
 // URL of the raw CSV file on GitHub
-$csvUrl = 'https://raw.githubusercontent.com/chachaleo/test/tree/basic/data.csv';
+$csvUrl = 'https://raw.githubusercontent.com/chachaleo/test/basic/data.csv';
 
 // Fetch CSV content
 $csvContent = file_get_contents($csvUrl);
