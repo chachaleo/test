@@ -1,8 +1,8 @@
 <?php
-$db_host = 'your_db4free_host';
-$db_user = 'your_db4free_username';
-$db_pass = 'your_db4free_password';
-$db_name = 'your_db4free_database_name';
+$db_host = '127.0.0.1';
+$db_user = 'chachaleo';
+$db_pass = 'M5ZJwKF2F5SqKns';
+$db_name = 'impact_assess';
 
 $conn = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
 
