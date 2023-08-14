@@ -10,7 +10,7 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-$query = "SELECT `col 2` as answer FROM questions LIMIT 1";
+$query = "SELECT `Col 2` as answer FROM questions_1 LIMIT 1";
 $result = mysqli_query($conn, $query);
 
 if ($row = mysqli_fetch_assoc($result)) {
